@@ -24,10 +24,10 @@ const palindrome = (str) => {
   stringNoS = str.replace(/ /g, "");
   //first evaluation; if 'str' not exist we send a warning.
   if (!str) {
-    return console.warn("Only string characters");
+    return "Only string characters";
     //second evaluation; besides if "str" not is a "string" type we send another warning.
   } else if (typeof str !== "string") {
-    return console.warn("Only string values");
+    return "Only string values";
     //third evaluation; for cases of "str" lenght ir less or equal to 1 we can't evaluate the word, for that we send a "false"
   } else if (str.lenght <= 1) {
     return false;
